@@ -1,0 +1,80 @@
+:root{
+    --color:red ;
+}
+*{
+    box-sizing: border-box;
+}
+/* body{
+    overflow: hidden; 
+} */
+/* Start Media Query */
+
+/* Start Mobile  */
+@media(max-width:768px){
+    /*Start navbar in bootstrap*/
+
+    .navbar-inverse .navbar-nav > li > a {
+        padding: 10px 10px;
+        font-size: 14pt;
+    }
+    .navbar-fixed-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse{
+        max-height: none;
+    }
+    .navbar-inverse .navbar-nav > li > .dropdown-toggle{
+        overflow: hidden;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover{
+        padding-left:30px;
+        background-color: var(--color);
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li:first-child{
+        border-top: 1px solid var(--color);
+    }
+    #Testimonials .carousel-inner > .item .coment{
+        padding: 10px 0;
+    }
+    #Testimonials .carousel-inner > .item .coment p{
+        font-size: 12pt;
+    }
+    #Testimonials .carousel-indicators{
+        margin-top: 50px;
+    }
+    #Testimonials .carousel-indicators li{
+        height:50px;
+        width:50px;
+    }
+
+    .subscribe .form-inline button {
+        margin-top: 10px;
+    }
+    .our-skills .about-team{
+        margin: 20px 0 0 0;
+    }
+
+    .logos img{
+        width:90%;
+        height:70px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .footer .copyright{
+        margin-top: 20px;
+    }
+
+    /*End navbar in bootstrap*/
+
+}
+/* End Mobile  */
+
+/* Start Small Screen  */
+@media (min-width: 768px) and (max-width: 991px){
+    .our-skills .about-team{
+        margin-top: 30px;
+    }
+}
+
+/* End Small Screen  */
+
+/* End Media Query */
